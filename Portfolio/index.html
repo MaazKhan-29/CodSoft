@@ -5,8 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Maaz Khan Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" >
+    <link rel="stylesheet" href="asset/css/style.css">
 </head>
 <body>
+    <div class="main">
+        <div class="navbaar">
+            <div class="logo">
+                <img src="asset/img/My-Logo.png" class="logo-1" alt="">
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Skills</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Resume</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="hamburger" onclick="menubar_open()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <!-- POPUP MENUBAR-->
+            <div class="menubar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>About</li>
+                    <li>Skills</li>
+                    <li>Projects</li>
+                    <li>Resume</li>
+                    <li>Contact</li>
+                </ul>
+                <div class="back" onclick="menubar_close()">
+                <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+        </div>
+    </div>
     
+    <script src="asset/js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,124 @@
+@font-face {
+    font-family: prototype;
+    src: url(../Fonts/Prototype.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: prototype;
+
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.logo-1{
+    height: 45px;
+    padding: 5px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.navbaar{
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    height: 60px;
+}
+.links{
+    margin-right: 20px;
+    height: 40px;
+}
+.links ul li{
+    list-style: none;
+    margin-left: 20px;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 40%;
+    margin-top: 10px;
+    font-size: 17px;
+    position: relative;
+    width: auto;
+    z-index: 1;
+}
+.links ul li a{
+    text-decoration: none;
+    color:black;
+}
+/* .links ul li a:hover{
+    color: white;
+} */
+.links ul li::after{
+    content:"";
+    height: 40px;
+    width: 100%;
+    border-radius: 60%;
+    background-color: black;
+    display: inline-block;
+    position:absolute;
+    top: 100%;
+    left: 0;    
+    z-index: -1;
+}
+.links ul{
+    display: inline-flex;
+}
+.hamburger{
+    display: none;
+    padding: 10px;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+@media screen and  (max-width: 800px) {
+
+    .links{
+        display: none;
+    }
+    .hamburger{
+        display: inline-block;
+    }
+}
+
+.menubar{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.226);
+    color: white;
+    position:absolute;
+    /* display:contents;
+    justify-content: center;
+    align-items: center; */
+    backdrop-filter: blur(5px);
+    display: none;
+}
+.menubar ul li{
+    list-style: none;
+    padding: 10px;
+    font-size: 25px;
+}
+.menubar ul li a:active{
+    font-style: oblique;
+}
+.menubar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.menubar ul{
+   position: relative;
+    top: 35vh;
+    left: 45vw;
+}
+.back{
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    font-size: 30px;
+    padding: 10px;
+}
