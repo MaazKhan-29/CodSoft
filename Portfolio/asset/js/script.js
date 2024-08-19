@@ -1,6 +1,7 @@
 let menu = document.querySelector(".menubar");
 let icon = document.querySelector(".fa-solid");
-let icon_div=document.querySelector(".hamburger")
+let icon_div = document.querySelector(".hamburger");
+
 function menubar_open() {
     menu.style.display = "block";
     icon.classList.replace("fa-bars", "fa-xmark");
