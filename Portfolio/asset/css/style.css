@@ -11,8 +11,13 @@
     font-family: prototype;
 
 }
+html {
+    scroll-behavior:smooth;
+  }
+  
 body{
     /* background-color: black; */
+    transition: 2s ease-in;
 }
 /* body{
     overflow-x: hidden;
@@ -21,6 +26,7 @@ body{
     /* height: 100%;
     width: 100%; */
     position: relative;
+    overflow: hidden;
 }
 /* Navbaar Start From Here */
 .logo-1{
@@ -67,11 +73,11 @@ body{
 .links ul li:hover{
     filter: drop-shadow(1px 1px 10px orange);
 }
-.links ul li a{
+.links ul  a{
     text-decoration: none;
     color:black;
 }
-.links ul li:hover a{
+.links ul a:hover li{
     color: white;
     text-shadow: 1px 1px 5px black;
 }
@@ -212,6 +218,11 @@ body{
     top: 80px;
     filter: drop-shadow(2px 1px 40px rgb(196, 131, 12));
     position: relative;
+    @media screen and (max-width:400px) {
+        height: 220px;
+        width: 220px;
+
+    }
 }
 
 
@@ -220,10 +231,14 @@ body{
     height: 400px;
     transform: rotate(-45deg);
     padding: 10px;
+    @media screen and (max-width:400px) {
+        height: 300px;
+
+    }
 }
 .photo-r{
     animation: My-photo 4s ease infinite;
-    height:fit-content
+    height:fit-content;
 }
 @keyframes My-photo{
     0%{
@@ -262,10 +277,10 @@ body{
         width: 100vw;
         height: 100vh;
     } */
-     height: 100vh;
-     width: 100%;
+     height:fit-content;
+     width:100%;
      color: black;
-     background-color: blue;
+     background-color: black;
      margin-top: 200px;
 /* text-align: center; */    }
 .about-heading{
@@ -285,17 +300,73 @@ body{
 
 .about-description{
     
-    width: 90vw;
-    background-color: orange;
+    width: 80vw;
+    /* background-color: orange; */
     margin: auto;
     text-align: center;
-    margin-top: 50px;
     line-height: 30px;
     font-size: 20px;
+    color: white;
 }
-
+.about-description-heading{
+    color: rgb(196, 131, 12);
+}
+.about .p1{
+    margin-top: 50px;
+}
 .about-hr2{
     /* display: inline-block; */
-    width: 90%;
+    width: 95vw;
     margin: auto;
+    margin-bottom: 10px;
+    background-color: rgb(196, 131, 12);
+    border: none;
+    height: 2px;
+
+}
+/* About Section End Here */
+
+/* Skills Section Start Here */
+
+.skills{
+    height:fit-content;
+    width:100%;
+    color: white;
+    background-color: black;
+    margin-top: 130px;
+}
+.skills-heading{
+    color: rgb(196, 131, 12);
+    font-size: 40px;
+    text-align: center;
+}
+.skills-logo{
+    height: 250px;
+    width: 250px;
+    gap: 10px;
+    @media screen and (max-width:600px) {
+        height: 180px;
+    width: 180px;
+    
+    }
+    @media screen and (max-width:400px) {
+        height: 140px;
+    width: 140px;
+    }
+}
+
+.skills-images{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: center;
+    @media screen and (max-width:600px) {
+        display: grid;
+        grid-template-columns:auto auto;
+        
+    }
+}
+
+.BTSP{
+    margin-left: 30px;
 }
