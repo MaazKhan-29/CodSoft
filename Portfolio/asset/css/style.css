@@ -16,8 +16,8 @@ html {
   }
   
 body{
-    /* background-color: black; */
-    transition: 2s ease-in;
+    background-color: black;
+    /* transition: 2s ease-in; */
 }
 /* body{
     overflow-x: hidden;
@@ -43,9 +43,9 @@ body{
     height: 85px;
     width: 100%;
     /* background-color: rgb(107, 132, 240); */
-    /* position: sticky;
-    z-index: 3;
-    top: 0; */
+    position: sticky;
+    z-index: 6;
+    top: 0;
     /* overflow-y: hidden; */
 }
 .links{
@@ -110,6 +110,9 @@ body{
     margin-top: 10px;
     z-index: 6;
     transition:0.1s ease-in;
+    color: rgb(196, 131, 12) ;
+
+    
 }
 
 @media screen and  (max-width: 800px) {
@@ -123,11 +126,13 @@ body{
 }
 
 .menubar{
-    height: 100vh;
-    width: 100vw;
-    background-color: rgba(0, 0, 0, 0.226);
+    height: 80vh;
+    width: 80vw;
+    background-color: rgb(134, 68, 6);
     color: white;
     position:absolute;
+    top: 10vh;
+    left: 10vw;
     /* display:contents;
     justify-content: center;
     align-items: center; */
@@ -171,6 +176,8 @@ body{
     margin-right: 15px;
     z-index: 8;
     transition: 0.1s ease;
+    color: rgb(196, 131, 12) ;
+
 }
 /* Navbaar End Here */
 
@@ -290,10 +297,10 @@ body{
     
 }
 
-.about-hr1{
+.ab-hr1{
     width: 120px;
     margin: auto;
-    background-color: rgb(196, 131, 12);
+    background-color: rgb(196, 131, 12) !important;
     border: none;
     height: 2px;
     }
@@ -314,7 +321,7 @@ body{
 .about .p1{
     margin-top: 50px;
 }
-.about-hr2{
+.ab-hr2{
     /* display: inline-block; */
     width: 95vw;
     margin: auto;
@@ -369,4 +376,103 @@ body{
 
 .BTSP{
     margin-left: 30px;
+}
+/* Skills Section end here */
+
+/* project section Start here */
+.projects{
+    margin-top: 100px;
+    background-color: black;
+    color: aliceblue;
+}
+.projects-heading{
+    color: rgb(196, 131, 12);
+    font-size: 40px;
+    text-align: center;
+}
+.project-details{
+    margin-top: 50px;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-between;
+    /* width: fit-content; */
+    
+}
+.project-img-con{
+    height: 280px;
+    width: 400px;
+    margin-left:50px;
+    margin-top: 20px;
+    /* background-color: aqua; */
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width:550px) {
+        height: 180px;
+        width: 300px;
+        margin: auto;
+    }
+}
+.project-img{
+    height: 270px;
+    width: 390px;
+    /* margin-left:50px;
+    margin-top: 20px; */
+    /* background-color: aqua; */
+    @media screen and (max-width:550px) {
+        height: 180px;
+        width: 300px;
+        margin: auto;
+    }
+}
+
+.project-content{
+    margin-top: 50px;
+    /* margin-left: 100px;    */
+    margin-right:20px ;
+     width: 45vw;
+     margin-bottom: 20px;
+ /* background-color: blueviolet; */
+
+    @media screen and (max-width:550px) {
+        margin: auto;
+        margin-top: 30px;
+        width: 300px;
+    }
+
+}
+.prj-hd-1{
+    color: rgb(196, 131, 12);
+    font-size: 30px;
+    text-align: center;
+}
+/* Contact Start Here */
+.contact{
+    margin-top: 50px;
+    background-color: black;
+}
+.contact-info{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.contact-icons a{
+    text-decoration: none;
+    color: rgb(196, 131, 12);
+    font-size: 50px;
+    @media screen and (max-width:400px) {
+        font-size: 30px;
+    }
+    
+}
+.contact-icons{
+    width: fit-content;
+    /* height: fit-content; */
+    margin-left: 20px;
+}
+.contact-icons:hover a{
+    color: white;
 }
